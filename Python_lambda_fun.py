@@ -59,3 +59,27 @@ a = 11
 b = 7
 
 print(lambda_max_two_nums(a,b))
+
+# Hoew to use reduce() function ??
+import functools
+
+list_x =[1,2,3,4,5]
+
+# result = 0
+# result = result + i
+
+add_two_nums = lambda x,y : x + y
+result1  = functools.reduce(add_two_nums, list_x)
+print(result1)
+
+mul_two_nums = lambda x,y : x * y
+result2  = functools.reduce(mul_two_nums, list_x)
+print(result2)
+
+# How to use filter() ???
+#Q: find only odd from the list using filter() function.
+seq = [1,3,5,7,9,11,2,4]
+
+check_odd_num = lambda x : x % 2 != 0
+result = list(filter(check_odd_num, seq))
+print(result)
