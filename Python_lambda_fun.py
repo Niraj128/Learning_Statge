@@ -34,6 +34,25 @@ print(lambda_concetanate(a,b))
 
 #4. calculate max of two numbers
 
+#How to work with map(), reduce() and filter() ???
+
+# Implementing map function
+ 
+list1 = [1,2,3,4,5,6,7,8,9,10]
+
+Square_num = lambda x :x*x
+Sqaure_list = list(map (Square_num,list1))
+print(Sqaure_list)
+
+# Add sequential respective elements in two given lists
+
+list_a = [1,2,3,4,5]
+list_b = [5,4,3,2,1] #-----> reslut required [6,6,6,6,6,]
+
+sum_two_list = lambda x, y : x+y
+result = list(map(sum_two_list, list_a,list_b))
+print(result)
+
 lambda_max_two_nums =lambda x,y : x if x > y else y
 
 a = 11
