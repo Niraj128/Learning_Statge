@@ -11,7 +11,7 @@ print(set3)
 
 set6 = set()
 set6.add(1)
-set6.add(4)
+set6.add(6)
 set6.add(9)
 set6.add(1)
 
